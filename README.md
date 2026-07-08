@@ -32,7 +32,7 @@ The financial penalty of a False Negative error in cardiology is catastrophic. A
 Ultimately, this AI framework establishes a rare win win scenario in modern healthcare logistics: it dramatically improves patient survival metrics while simultaneously acting as a powerful financial shield against operational waste and legal liability.
 
 
-## 🗺️ NOTEBOOK BY NOTEBOOK: executed operations and core conclusions 
+## 🗺️ NOTEBOOK BY NOTEBOOK: Executed Operations & Core Conclusions 
 
 ### 📊 Notebook 1: Exploratory Data Analysis (EDA)
 * **Operations Executed**: Investigated the underlying distributions of the 12 raw binary targets and clinical predictors. Formulated an age-segmented incidence profile and identified extreme data imbalance and sparse features.
