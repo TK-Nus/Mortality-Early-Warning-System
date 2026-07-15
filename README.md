@@ -1,4 +1,5 @@
-💼 Business Problem
+# Midterm Project- Myocardial Infarction Complications Prediction
+### 💼 Business Problem
 When a patient arrives with a heart attack, doctors cannot instantly tell who will recover safely and who will suddenly develop dangerous secondary heart problems over the next three days. To be safe, hospitals waste time and money running slow, expensive diagnostic tests, which delays treatments and crowds intensive care units with patients who do not actually need to be there. This guesswork creates a massive financial burden, burning budgets on unnecessary testing while risking fatal medical errors if a truly high-risk patient is accidentally sent home too early, causing a dangerous clinical clinical blind spot.
 
 🎯 Project Goal
