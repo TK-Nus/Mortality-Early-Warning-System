@@ -2,17 +2,17 @@
 ### 💼 Business Problem
 When a patient arrives with a heart attack, doctors cannot instantly tell who will recover safely and who will suddenly develop dangerous secondary heart problems over the next three days. To be safe, hospitals waste time and money running slow, expensive diagnostic tests, which delays treatments and crowds intensive care units with patients who do not actually need to be there. This guesswork creates a massive financial burden, burning budgets on unnecessary testing while risking fatal medical errors if a truly high-risk patient is accidentally sent home too early, causing a dangerous clinical clinical blind spot.
 
-🎯 Project Goal
+### 🎯 Project Goal
 Our goal is to build an affordable AI software that uses basic, low-cost health data already available at admission to predict heart complications before they happen. By putting this tool right at the patient bedside, doctors can instantly spot high-risk patients without waiting for slow, expensive medical tests. This shifts cardiac care from reactive guessing to proactive prevention, helping hospitals optimize their resources, speed up treatments, and save millions in unnecessary healthcare costs.
 
-📊 Target and Time Dynamic Architecture
+### 📊 Target and Time Dynamic Architecture
 The project targets the multi-label classification of myocardial infarction outcomes, consolidated into five key categories: overall mortality, chronic heart failure, ischemic events, acute pulmonary complications, and severe arrhythmias. Predictions are driven by a dynamic pipeline composed of three sequential model engines triggered at distinct, cumulative clinical time windows:
 
 * **Day 1 (ER Admission Horizon):** Utilizing raw background history, ECG markers, and initial ER vitals.
 * **Day 2 (24h to 48h Laboratory Horizon):** Dynamically adding morning blood panels and enzyme counts as they arrive.
 * **Day 3 (Advanced ICU Horizon):** Incorporating the full longitudinal patient history, clinical complications, and early treatment responses. This chronological architecture continuously updates patient risk profiles as new, low-cost data becomes available.
 
-📈 The Primary Metric and Clinical Optimization Strategy
+### 📈 The Primary Metric and Clinical Optimization Strategy
 The primary optimization vector for this clinical pipeline is Recall because it acts as an airtight safety net to capture every high-risk patient before fatal complications occur. The severe risk asymmetry in an ICU environment governs this decision:
 
 * **False Negatives (FN - The Worst Case):** A sick patient is mistakenly classified as healthy and discharged home, leading to catastrophic medical emergencies, fatalities, and massive institutional lawsuits.
@@ -20,7 +20,7 @@ The primary optimization vector for this clinical pipeline is Recall because it 
 
 We strictly prefer making False Positive errors over dangerous False Negative errors. However, to prevent a naive model from triggering endless false alarms (which causes severe Alarm Fatigue among medical staff), our framework explicitly optimizes the Macro F2 Score and Macro Recall metrics across a tuned 0.22 probability threshold. The F2 Score mathematically places a double weight on Recall while maintaining a strict, secondary protective boundary over Precision, guaranteeing an optimal balance between patient safety and hospital resource efficiency. To evaluate this combined multi-label performance on the unseen test set, we apply flat array flattening via the ravel() method, merging all target dimensions into a singular combined clinical confusion matrix representing total clinical decisions.
 
-💰 Economic and Risk Mitigation Utility (The Financial ROI)
+### 💰 Economic and Risk Mitigation Utility (The Financial ROI))
 From an institutional and healthcare insurance (Payer and Provider) perspective, the implementation of this predictive pipeline transforms hospital economics by optimizing resource allocation and slashing risk overheads across two major operational vectors:
 
 1. **Eliminating Low-Risk ICU Crowding (Preventing Unnecessary Admissions):** Traditionally, due to defensive medicine and clinical uncertainty, hospitals admit a massive wave of stable patients into highly expensive ICU beds just to be safe. A single ICU bed-day generates significant costs. By delivering an early, high-confidence clearance score right at the patient bedside, our model empowers clinicians to safely route low-risk patients directly to general wards or home care. Our dynamic clinical experiment demonstrated that preventing these unnecessary prolonged lengths of stay optimizes bed turnover. This secures an immediate operational budget reduction of 3,342,500 USD per year for a standard hospital network, driving overall ICU bed expenditures down from 15 Million USD to 11.65 Million USD.
