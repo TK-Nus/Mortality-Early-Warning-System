@@ -32,8 +32,9 @@ Ultimately, this AI framework establishes a rare win-win scenario in modern heal
 🗺️ NOTEBOOK BY NOTEBOOK: Executed Operations & Core Conclusions
 
 📊 Notebook 1: Exploratory Data Analysis (EDA)
-* **Operations Executed:** Investigated the underlying distributions of the 12 raw binary targets and clinical predictors. Formulated an age-augmented incidence profile and identified extreme data imbalance and sparse features.
-* **Core Conclusion:** Discovered that patients older than 70 exhibit a catastrophic surge in overall mortality (LET_IS) and chronic heart failure (ZSN). Conversely, found that immune-driven events like Dressler Syndrome paradoxically peak in younger cohorts. Concluded that the dataset must be structurally stratified into time-based patient horizons.
+* **Operations Executed:** Investigated the underlying distributions of the 12 raw binary targets and clinical predictors. Generated an age-stratified incidence profile, mapped linear correlation structures, and identified extreme class imbalances along with highly sparse features.
+* **Core Conclusion:** Discovered that patients older than 70 exhibit a catastrophic surge in overall mortality (LET_IS) and chronic heart failure (ZSN). Conversely, immune-driven events like Dressler Syndrome paradoxically peak in younger cohorts. Crucially, due to the severe class imbalance where survivors vastly outnumber specific causes of death, we concluded that mortality cannot be used as a standalone prediction target. Finally, tracking the shifting correlation matrices across hospitalization windows confirmed that the data must be analyzed through time-dependent patient horizons.
+
 
 ⚙️ Notebook 2: Data Preprocessing
 * **Operations Executed:** Enforced initial data cleaning by removing highly sparse columns with >60% missingness (e.g., 'KFK_BLOOD'). Sliced the clinical feature space into 3 cumulative, chronological time windows (Day 1, Day 2, and Day 3) based on real hospital data availability timelines.
