@@ -1,4 +1,4 @@
-# MIDTERM PROJECT: Mortality Early Warning System
+# MIDTERM PROJECT: Mortality Early Warning System 
 
  BUSINESS PROBLEM:
 --------------------
