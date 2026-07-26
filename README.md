@@ -1,7 +1,7 @@
 project_summary = """
 MIDTERM PROJECT: DAY 3 MORTALITY EARLY WARNING SYSTEM POST-MYOCARDIAL INFARCTION
 
-1. BUSINESS PROBLEM:
+1. BUSINESS PROBLEM:ג
 --------------------
 When a patient arrives with a myocardial infarction (heart attack), clinicians face a critical dilemma: 
 they cannot instantly separate stable patients from those who will experience a sudden, catastrophic 
