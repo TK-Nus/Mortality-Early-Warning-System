@@ -153,6 +153,27 @@ commercial and humanitarian asset for any modern healthcare network.
   saved per admitted patient). This establishes a powerful financial efficiency ratio of 1:37, reducing overall 
   hospital mortality expenditure by 62.3% and validating the framework as a prime commercial and clinical asset.
 
+  project-Mortality Early Warning System
+├─ README.md
+├─ requirements.txt
+├─ .gitignore
+├─ data/
+│ ├─ raw/
+│ ├─ processed
+│ └─ data_dictionary.md 
+├─ notebooks/
+│ ├─ 01_eda.ipynb 
+│ ├─ 02_preprocessing.ipynb
+│ ├─ 03_ Feature Engineering
+│ ├─ 04_modeling.ipynb 
+│ ├─ 05_model_evaluation.ipynb 
+│ └─ 06_experiments.ipynb 
+├─ reports/
+│ ├─ figures/ # saved charts
+│ ├─ model_results.md # summary of model performance and conclusions
+│ └─ experiment_results.md # optional: A/B test or experiment results
+└─ presentation
+
 
 
 
