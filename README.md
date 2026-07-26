@@ -71,10 +71,15 @@ validated directly by unseen test set deployments:
   false alarm on extra screening blood panels):
   
   -> Gross Financial Savings:           510,000 USD (Generated from the 34 saved lives)
+  
   -> Waste Alert Expense:              -13,500 USD  (Generated from the 45 false alarms)
+  
   -> NET HOSPITAL FINANCIAL BENEFIT:    496,500 USD Saved per 340 cardiac admissions.
+  
   -> PROJECT ROI FOR INVESTORS:         +165.0% Financial Return on Clinical Operational Costs.
+  
   -> NET SAVINGS PER ADMITTED PATIENT:  1,460.29 USD Saved for every single patient entering the facility.
+  
 
 * The Financial Efficiency Ratio: For every 1 USD the hospital spends on the model's false alarms, 
   the system generates 37 USD in net financial savings through life-saving early interventions.
