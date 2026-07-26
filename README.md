@@ -1,7 +1,6 @@
-project_summary = """
 # MIDTERM PROJECT: DAY 3 MORTALITY EARLY WARNING SYSTEM POST-MYOCARDIAL INFARCTION
 
-1. BUSINESS PROBLEM:ג
+ BUSINESS PROBLEM:
 --------------------
 When a patient arrives with a myocardial infarction (heart attack), clinicians face a critical dilemma: 
 they cannot instantly separate stable patients from those who will experience a sudden, catastrophic 
@@ -12,8 +11,7 @@ if a truly high-risk patient is misclassified as stable and discharged premature
 clinical blind spot, resulting in irreversible medical emergencies and multi-million-dollar 
 institutional malpractice lawsuits.
 
-
-2. PROJECT GOAL:
+PROJECT GOAL:
 ----------------
 The goal of this project is to deploy an automated, bedside AI software that utilizes low-cost, 
 readily available clinical parameters to identify high-risk patients before fatal outcomes happen. 
